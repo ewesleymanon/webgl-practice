@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .canvas { width: 100vw; height: 100vh; display: block; }
+    .js-canvas {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .canvas-wrapper {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .canvas-wrapper canvas {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    header {
+      position: relative;
+      display: flex;
+      height: 100vh;
+      width: 100%;
+    }
+
+    header .logo {
+      position: relative;
+      display: block;
+      margin: auto;
+      max-width: 420px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <div class="js-gradation">
+  </div>   -->
+  <!-- <canvas class="test js-canvas"></canvas> -->
+  <header>
+    <div id="js-canvas-wrapper" class="canvas-wrapper"></div>
+  </header>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.2/pixi.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.0.3/pixi.min.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<!-- <script type="module" src="distortion.js"></script> -->
+<!-- <script src="pixi.js"></script> -->
+<script src="pixi-water.js"></script>
+</html>
